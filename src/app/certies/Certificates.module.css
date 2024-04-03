@@ -1,0 +1,66 @@
+/* Certificates.module.css */
+
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #DAA520; /* Golden color */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Enhance letter spacing */
+    text-shadow: 0 0 10px #DAA520, 0 0 20px #DAA520; /* Glow effect for the title */
+  }
+  
+  .certificatesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted for larger image slots */
+    gap: 30px; /* Increase gap for better spacing */
+    padding: 20px;
+  }
+  
+  .certificate {
+    border: 1px solid #eee; /* Adjusted border color for a lighter touch */
+    border-radius: 15px; /* More pronounced rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for more depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Needed for absolute positioning of the glow effect */
+  }
+  
+  .certificate:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  }
+  
+  .certificate::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(145deg, #DAA520, #ffd700, #DAA520);
+    filter: blur(10px);
+    opacity: 0;
+    border-radius: 15px; /* Ensure the glow follows the border radius */
+    transition: opacity 0.3s ease;
+  }
+  
+  .certificate:hover::before {
+    opacity: 1; /* Show glow effect on hover */
+  }
+  
+  .certificateImage {
+    width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    object-fit: cover; /* Ensures images cover their slots */
+  }
+  
+  .certificateTitle {
+    margin-top: 15px;
+    padding: 0 15px; /* Increased padding */
+    font-size: 1.2rem; /* Larger font size for readability */
+    color: #555; /* Darker color for better contrast */
+  }
+  

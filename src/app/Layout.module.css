@@ -1,0 +1,47 @@
+/* app/Layout.module.css */
+
+.header {
+  
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .seal {
+    width: 200px; /* Adjust size as needed */
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .fancyTitle {
+    font-family: 'Cursive', sans-serif; /* Example: Use a fancy font */
+    margin: 20px 0;
+    color: #1ec556; /* Light color for the title */
+    font-size: 6em; /* Bigger font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2); /* Adds depth to the title */
+  }
+  
+  
+  /* app/Layout.module.css */
+
+.backgroundContainer {
+    height: 50%;
+    max-height: 8px;
+    background-image: url('/images/SCC.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire area of the container */
+    background-position: center; /* Center the background image */
+    border-radius: 20px; /* Rounded edges */
+    padding: 20px; /* Creates space inside the container */
+    margin: 20px; /* Adds some margin to prevent it from reaching the viewport edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a "lifted" effect */
+    min-height: 60vh; /* Minimum height to cover the viewport height */
+    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+  }
+  
+  .mainContent {
+    margin-left: 30px; /* Adjust based on your sidebar width, if necessary */
+    padding: 20px;
+  }
+  
+  /* Ensure other elements in your layout are styled to match/fit this new design */
+  

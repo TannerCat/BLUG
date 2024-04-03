@@ -1,0 +1,82 @@
+/* Sidebar.module.css updates */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    left: -260px; /* Start hidden off-screen */
+    top: 0;
+    background-color: #f0d733; /* Purplish background */
+    color: rgb(221, 141, 253);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    transition: left 0.3s ease; /* Smooth transition for showing/hiding */
+    z-index: 1000;
+  }
+  
+  .sidebar:hover {
+    left: 0; /* Show sidebar on hover */
+  }
+  
+  .linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Center items horizontally */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .linkContainer:hover, .linkContainer.active {
+    background-color: #d0e266;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    color: rgb(25, 155, 18);
+  }
+  
+  .linkText {
+    color: rgb(25, 155, 18);
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Slightly bigger font */
+    font-weight: bold; /* Bold text */
+    
+  }
+
+  .sidebar ul {
+    list-style: none; /* Removes bullet points from list items */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+  }
+  
+  .sidebar ul li {
+    list-style: none; /* Ensures no list marker for individual items */
+    margin-bottom: 40px;
+    /* Add other styles as necessary */
+  }
+  
+  /* Add to your Sidebar.module.css */
+
+.sidebarTitle {
+    margin-bottom: 60px; /* Adds some space below the title */
+    font-size: 24px; /* Larger font size */
+    color: #EAE2B7; /* Light color for the title */
+    text-align: center; /* Centers the title text */
+    font-weight: bold; /* Make the title bold */
+    font-family: 'Arial', sans-serif; /* Custom font, ensure it's loaded or available */
+    text-shadow: 2px 2px 4px #774FB7; /* Adds a shadow to the title text for depth */
+    padding: 10px; /* Padding around the title for better spacing */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #774FB7; /* Background color that matches the sidebar theme */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft box shadow for a lifted effect */
+    transition: transform 0.2s ease-in-out; /* Animation effect for hover */
+  }
+  
+  .sidebarTitle:hover {
+    transform: scale(1.05); /* Slightly enlarges the title on hover */
+  }
+  

@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imageContainer {
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
+  border-color: #0070f3;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.2s ease;
+}
+
+.imageContainer:hover .image {
+  filter: brightness(90%);
+}
+
+.description {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
+  font-size: 1em;
+}

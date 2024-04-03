@@ -1,0 +1,56 @@
+.postsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .post {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .post:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover for depth */
+  }
+  
+  .postImage {
+    margin-left: auto; /* Center align the image */
+    margin-right: auto; /* Center align the image */
+    width: 100%; /* Responsive width */
+    max-width: 1350; /* Max width to maintain aspect ratio */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the images cover the area without stretching */
+    border-radius: 5px; /* Soften the edges of the image */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .postImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .postTitle {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    transition: color 0.3s ease; /* Color transition for interactive text */
+  }
+  
+  .postTitle:hover {
+    color: #0070f3; /* Change color on hover for interaction */
+  }
+  
+  .postDescription {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    transition: color 0.3s ease; /* Consistent interaction style with title */
+  }
+  
+  .postDescription:hover {
+    color: #0070f3; /* Matching hover effect as postTitle */
+  }
+  

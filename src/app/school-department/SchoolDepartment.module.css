@@ -1,0 +1,60 @@
+/* SchoolDepartment.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Space between school and department sections */
+    padding: 20px;
+  }
+
+  .section:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and description */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .section:hover {
+    transform: translateY(-10px); /* Lifts the section up slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+  }
+  
+  .description {
+    padding: 15px;
+  }
+  
+  .description h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .section, .section:nth-child(2) {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  

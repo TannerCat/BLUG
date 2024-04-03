@@ -16,7 +16,7 @@ export default function SchoolDepartment() {
         <img src="/images/department.jpg" alt="Department" className={styles.image} />
         <div className={styles.description}>
           <h2>SCC - College of Computing Studies</h2>
-          <p>Calling all College of Computing Studies alumni and students! Don&apost miss HIMUGSO, the department of College of Computing Studies event, happening at Saint Columban College, Pagadian City from March 27 to April 1, 2023. Our theme is "Ang pag-edukar sa mga kabatan-onan sa teknolohiya sa atong modernong katilingban para sa umaabot na panahon" with an Intergalactic motif. Join us as we explore the latest trends and innovations in computing studies and experience a world of space exploration and technology. See you there! </p>
+          <p>Calling all College of Computing Studies alumni and students! Don&apost miss HIMUGSO, the department of College of Computing Studies event, happening at Saint Columban College, Pagadian City from March 27 to April 1, 2023. Our theme is &quotAng pag-edukar sa mga kabatan-onan sa teknolohiya sa atong modernong katilingban para sa umaabot na panahon&quot with an Intergalactic motif. Join us as we explore the latest trends and innovations in computing studies and experience a world of space exploration and technology. See you there! </p>
         </div>
       </div>
     </div>
